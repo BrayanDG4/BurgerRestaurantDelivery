@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ******SCROLL-BAR****** */
+body::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(54, 55, 56);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #FFE34E;
+    border-radius: 5px;
+    border-right: 1px solid #FFE34E;
+    border-left: 1px solid #FFE34E;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: #fdee98;
+}
+
+
+
+/* ******NAVBAR****** */
+.navbar{
+    width: 100%;
+    background-color: rgba(54, 55, 56, 0.904);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.navbar .logo{
+    text-align: center;
+    margin-left: 10%;
+}
+
+.navbar .logo img{
+    width: 11%;
+    height: auto;
+    
+}
+
+.navbar .btn-delivery img{
+    width: 100%;
+    border-radius: 18px;
+    transition: all .3s;
+}
+
+.navbar .btn-delivery img:hover{
+    transform: scale(1.1);
+}
+/* ******END NAVBAR******** */
+
+/* ******PROMO-SLIDER****** */
+.container-slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    margin-left: -100%;
+    background-color: black;
+}
+
+.slider-section{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    opacity: 0.7;
+}
+
+
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.slider-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-btn:hover{
+    background: #fff;
+}
+
+.slider-btn-right{
+    right: 10px;
+}
+
+.slider-btn-left{
+    left: 10px;
+}
+/* ******END PROMO-SLIDER****** */
+
+/* ******PROMOS-CONTAINER****** */
+
+.promos-container{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    z-index: 100;
+    top: 40%;
+    left: 6%;
+}
+
+.offer{
+    font-size: 40px;
+}
+
+.order-now{
+    background: #fff;
+    border: #fff 2px solid;
+    display: inline-block;
+    padding: 1px 4px 1px 4px;
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 14px;
+    color: black;
+    margin-top: 10%;
+}
+
+.order-now:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.offer p,h3{
+    color: #fff;
+}
